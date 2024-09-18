@@ -1,0 +1,188 @@
+/* General styling for the body and font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the navigation bar */
+  nav {
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Translucent navbar class when scrolling */
+  nav.scrolled {
+    background-color: rgba(0, 123, 255, 0.8); /* Make the navbar slightly translucent */
+  }
+  
+  /* Styling for the navigation menu items */
+  .nav-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+  }
+  
+  .nav-menu li {
+    margin: 0;
+  }
+  
+  /* Normal text color for menu items */
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for menu items (changes color on hover) */
+  .nav-menu a:hover {
+    color: #FFC107; /* Changes to yellow on hover */
+  }
+  
+  .logo a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styling for sections to add spacing */
+  section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  /* Home section */
+  #home {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* Styling for the about section */
+  #about {
+    background-color: #28A745;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+  
+  /* Styling for the services section */
+  #services {
+    background-color: #DC3545;
+    color: white;
+  }
+  
+  .services-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .services-content article {
+    padding: 10px;
+  }
+  
+  /* Styling for the portfolio section */
+  #portfolio {
+    background-color: #FFC107;
+    color: white;
+    text-align: center;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the team section */
+  #team {
+    background-color: white;
+    color: black;
+  }
+  
+  .team-members {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  /* Styling for the blog section */
+  #blog {
+    background-color: white;
+    color: black;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for the contact section */
+  #contact {
+    background-color: #6F42C1;
+    color: white;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: white;
+    color: #6F42C1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .services-content, .blog-posts {
+      grid-template-columns: 1fr;
+    }
+  
+    .team-members {
+      flex-direction: column;
+    }
+  }
+  
